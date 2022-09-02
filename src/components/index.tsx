@@ -1,2 +1,2 @@
-const App = "APP";
-export default App;
+import ControlSwitch from "./ControlSwitch";
+export { ControlSwitch };

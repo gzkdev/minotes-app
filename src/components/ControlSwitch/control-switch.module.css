@@ -1,0 +1,14 @@
+.control__switch {
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.control__btn {
+  flex-grow: 1;
+  height: 40px;
+  border-radius: var(--border-radius-xlg);
+  /* background-color: var(--blue-100); */
+}

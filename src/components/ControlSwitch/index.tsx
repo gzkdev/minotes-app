@@ -1,10 +1,14 @@
-import LineIcon from "react-lineicons";
+import { VscNotebook, VscListUnordered } from "react-icons/vsc";
+import styles from "./control-switch.module.css";
 
 function ControlSwitch() {
   return (
-    <div>
-      <button>
-        <LineIcon name="spinner" />
+    <div className={styles.control__switch}>
+      <button className={styles.control__btn}>
+        <VscNotebook />
+      </button>
+      <button className={styles.control__btn}>
+        <VscListUnordered />
       </button>
     </div>
   );
