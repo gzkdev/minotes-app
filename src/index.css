@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "Roboto Mono";
+  font-weight: normal;
+  src: url(./assets/fonts/RobotoMono-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-weight: 600;
+  src: url(./assets/fonts/RobotoMono-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-weight: 900;
+  src: url(./assets/fonts/RobotoMono-Bold.ttf) format("truetype");
+}
+
 *,
 *::before,
 *::after {
@@ -23,8 +41,8 @@ html {
   --font-size-lg: clamp(1.94rem, calc(1.78rem + 1.11vw), 2.75rem);
   --font-size-xlg: clamp(2.33rem, calc(2.1rem + 1.52vw), 3.43rem);
 
-  --font-family-mono: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  --font-family-mono: "Roboto Mono", source-code-pro, Menlo, Monaco, Consolas,
+    "Courier New", monospace;
 
   --border-radius-sm: 4px;
   --border-radius-base: 8px;
@@ -53,7 +71,7 @@ h1,
 h2,
 h3 {
   line-height: 1.25;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 h1 {
