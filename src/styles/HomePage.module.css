@@ -5,11 +5,11 @@
 
 .main {
   padding: 24px 16px;
-  background-color: var(--white-200);
 }
 
 .space {
   display: none;
+  background-color: var(--white-200);
 }
 
 @media (min-width: 1000px) {

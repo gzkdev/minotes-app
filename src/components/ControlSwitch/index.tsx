@@ -1,15 +1,10 @@
-import { VscNotebook, VscListUnordered } from "react-icons/vsc";
 import styles from "./control-switch.module.css";
 
 function ControlSwitch() {
   return (
-    <div className={styles.control__switch}>
-      <button className={styles.control__btn}>
-        <VscNotebook />
-      </button>
-      <button className={styles.control__btn}>
-        <VscListUnordered />
-      </button>
+    <div className={styles.control__switch} data-mode="lists">
+      <button className={styles.control__btn}>Notes</button>
+      <button className={styles.control__btn}>Lists</button>
     </div>
   );
 }

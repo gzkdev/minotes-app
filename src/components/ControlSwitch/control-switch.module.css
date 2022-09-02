@@ -1,4 +1,5 @@
 .control__switch {
+  position: relative;
   width: 90%;
   max-width: 400px;
   display: flex;
@@ -6,9 +7,36 @@
   justify-content: space-between;
 }
 
+.control__switch::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  border-radius: var(--border-radius-xlg);
+  background-color: var(--blue-100);
+  transition: 300ms;
+}
+
+.control__switch[data-mode="lists"]::after {
+  transform: translate(100%, 0);
+}
+
 .control__btn {
   flex-grow: 1;
   height: 40px;
   border-radius: var(--border-radius-xlg);
-  /* background-color: var(--blue-100); */
+  z-index: 1;
+  color: var(--white-100);
+}
+
+.control__btn:last-child {
+  color: var(--black-100);
+}
+
+.control__switch[data-mode="lists"] .control__btn {
+  color: var(--black-100);
+}
+
+.control__switch[data-mode="lists"] .control__btn:last-child {
+  color: var(--white-100);
 }
