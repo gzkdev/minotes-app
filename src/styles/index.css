@@ -1,19 +1,19 @@
 @font-face {
   font-family: "Roboto Mono";
   font-weight: normal;
-  src: url(./assets/fonts/RobotoMono-Regular.ttf) format("truetype");
+  src: url(../assets/fonts/RobotoMono-Regular.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-weight: 600;
-  src: url(./assets/fonts/RobotoMono-SemiBold.ttf) format("truetype");
+  src: url(../assets/fonts/RobotoMono-SemiBold.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-weight: 900;
-  src: url(./assets/fonts/RobotoMono-Bold.ttf) format("truetype");
+  src: url(../assets/fonts/RobotoMono-Bold.ttf) format("truetype");
 }
 
 *,
