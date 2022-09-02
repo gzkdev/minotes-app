@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import NotesSlice from "./NotesSlice";
+import ControlSlice from "./ControlSlice";
 
 export const store = configureStore({
   reducer: {
     notes: NotesSlice,
+    control: ControlSlice,
   },
 });
 
