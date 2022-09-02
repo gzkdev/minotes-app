@@ -1,4 +1,4 @@
-import styles from "./control-switch.module.css";
+import styles from "./ControlSwitch.module.css";
 
 function ControlSwitch() {
   return (
