@@ -18,7 +18,7 @@
   transition: 300ms;
 }
 
-.control__switch[data-mode="lists"]::after {
+.control__switch[data-mode="TO-DO"]::after {
   transform: translate(100%, 0);
 }
 
@@ -35,10 +35,10 @@
   color: var(--black-100);
 }
 
-.control__switch[data-mode="lists"] .control__btn {
+.control__switch[data-mode="TO-DO"] .control__btn {
   color: var(--black-100);
 }
 
-.control__switch[data-mode="lists"] .control__btn:last-child {
+.control__switch[data-mode="TO-DO"] .control__btn:last-child {
   color: var(--white-100);
 }
