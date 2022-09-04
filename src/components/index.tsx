@@ -1,3 +1,3 @@
 import ControlSwitch from "./ControlSwitch";
-import SaearchBar from "./SearchBar";
-export { ControlSwitch, SaearchBar };
+import SearchBar from "./SearchBar";
+export { ControlSwitch, SearchBar };
