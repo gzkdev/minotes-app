@@ -1,7 +1,9 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+
+type controlInterface = "NOTES" | "TO-DO";
 
 interface ControlSliceInterface {
-  control: "NOTES" | "TO-DO";
+  control: controlInterface;
 }
 
 const initialState: ControlSliceInterface = {
@@ -12,12 +14,8 @@ const controlSlice = createSlice({
   name: "control",
   initialState,
   reducers: {
-    toggleControl: function (state) {
-      if (state.control === "NOTES") {
-        state.control = "TO-DO";
-        return;
-      }
-      state.control = "NOTES";
+    toggleControl: function (state, action: PayloadAction<controlInterface>) {
+      state.control = action.payload;
     },
   },
 });

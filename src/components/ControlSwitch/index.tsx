@@ -9,8 +9,8 @@ function ControlSwitch() {
   
   return (
     <div className={styles.control__switch} data-mode={controlState}>
-      <button className={styles.control__btn} onClick={()=>dispatch(toggleControl())}>Notes</button>
-      <button className={styles.control__btn} onClick={()=>dispatch(toggleControl())}>Lists</button>
+      <button className={styles.control__btn} onClick={()=>dispatch(toggleControl("NOTES"))}>Notes</button>
+      <button className={styles.control__btn} onClick={()=>dispatch(toggleControl("TO-DO"))}>Lists</button>
     </div>
   );
 }
