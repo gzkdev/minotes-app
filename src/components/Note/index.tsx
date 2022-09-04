@@ -3,22 +3,28 @@ import { VscEllipsis } from "react-icons/vsc";
 import styles from "./Note.module.css";
 
 function Note() {
-  const [showActions, setShowActions] = useState(false);
+  const [isTooltipOpen, setIsTooltipOpen] = useState(false);
+
+  function hideTooltip() {
+    setIsTooltipOpen(false);
+  }
+
+  function showTooltip() {
+    setIsTooltipOpen(true);
+  }
 
   return (
-    <div className={styles.note} data-show-actions={showActions}>
+    <div className={styles.note} data-show-actions={isTooltipOpen}>
       <div className={styles.note__header}>
         <div className={styles.note__title}>My First Note</div>
         <button
           className={styles.note__btn}
-          onClick={() => setShowActions(!showActions)}
+          onFocus={showTooltip}
+          onBlur={hideTooltip}
         >
-          <VscEllipsis />
+          <VscEllipsis aria-label="toggle tooltip" />
         </button>
-        <div
-          onClick={() => setShowActions(!showActions)}
-          className={styles.note__actions}
-        >
+        <div className={styles.note__tooltip}>
           <button>Add to Favorites</button>
           <button>Delete Note</button>
         </div>

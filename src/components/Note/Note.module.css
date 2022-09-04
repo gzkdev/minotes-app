@@ -1,5 +1,4 @@
 .note{
-    /* outline: 1px solid black; */
     display: grid;
     padding: 16px 16px;
     gap: 16px;
@@ -13,34 +12,34 @@
     align-items: center;justify-content: space-between;
 }
 
-.note__actions{
+.note__tooltip{
     position: absolute;
     min-width: 100px;
     right: 0;
-    top: 0;
+    top: 110%;
     background-color: var(--white-100);
     border-radius: var(--border-radius-md);
     overflow: hidden;
-    box-shadow: -8px 12px 24px 0 rgba(0,0,0,0.14);
-    transform: translate(0, 10%);
     opacity: 0;
+    transform: translate(0, 10%);
     pointer-events: none;
     transition: all 200ms;
     outline: 1px solid #ebebeb;
+    box-shadow: -8px 12px 24px 0 rgba(0,0,0,0.14);
 }
 
-.note[data-show-actions="true"] .note__actions{
+.note[data-show-actions="true"] .note__tooltip{
     transform: translate(0, 0);
     opacity: 1;
     pointer-events: all;
 }
 
-.note__actions button{
+.note__tooltip button{
     display: block;
     padding: 8px 16px;
 }
 
-.note__actions button:not(:last-child){
+.note__tooltip button:not(:last-child){
     border-bottom: 1px solid #ebebeb;
 }
 
