@@ -14,11 +14,20 @@
 
 @media (min-width: 1000px) {
   .container {
+    align-items: flex-start;
     grid-template-columns: 400px 1fr;
   }
 
+  .main{
+    position: sticky;
+    top: 0;
+    max-height: 100%;
+    overflow-y: auto;
+  }
+
   .space {
-    padding: 24px;
     display: block;
+    padding: 24px;
+    height: 100%;
   }
 }
