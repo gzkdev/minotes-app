@@ -1,0 +1,32 @@
+.heading{
+    text-align: center;
+    font-size: var(--font-size-base);
+}
+
+.container{
+    margin-top: 40px;
+    display: grid;
+    gap: 16px;
+}
+
+.note{
+    /* outline: 1px solid black; */
+    display: grid;
+    padding: 16px 16px;
+    gap: 16px;
+    background-color: #ebebeb;
+    border-radius: var(--border-radius-xlg);
+}
+
+.note__header{
+    display: flex;
+    align-items: center;justify-content: space-between;
+}
+
+.note__btn{
+    width: 32px;
+    height: 32px;
+    background-color: var(--white-100);
+    border-radius: 50%;
+    cursor: pointer;
+}
